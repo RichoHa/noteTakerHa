@@ -49,6 +49,7 @@ app.post('/api/notes', (request, response) => {
     data.push(newObject);
     fs.writeFileSync(`./Develop/db/db.json`, JSON.stringify(data))
     response.status(200).send('The note was successfully added.');
+    res.end();
 })
 
 //delete note given the id of the note.
@@ -60,6 +61,7 @@ app.delete('/api/notes/:id', (request, response) => {
     data = data.filter(info => info.id !== idToDelete);
     fs.writeFileSync(`./Develop/db/db.json`, JSON.stringify(data))
     response.send('The note was successfully deleted.');
+    res.end();
 })
 
 
