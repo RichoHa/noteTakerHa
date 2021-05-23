@@ -3,6 +3,9 @@
 ## Link to GitHub:
 https://github.com/RichoHa/noteTakerHa
 
+## Deployed Website:
+https://protected-sierra-76198.herokuapp.com/notes
+
 ## List of Technology Used:
 - Node JS
 - Javascript
@@ -13,9 +16,6 @@ https://github.com/RichoHa/noteTakerHa
 ## Installation:
 - download code from github.
 - npm install in root file.
-
-## How to Run:
-- In your terminal - run server.js to listen on port 8080.
 
 ## Purpose of the website:
 The purpose of the website is to let people write notes.
