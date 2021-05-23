@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Routes
-// Serving static files from the directory public - the CSS and JavaScript files
+//Required to run the html files with it's correspondance
 app.use(express.static("../../../public"));
 
 
@@ -42,7 +42,7 @@ app.get('*', (req, res) => {
 
 //Put id into new notes obtained
 //push object into db.json
-//
+//write the new object into the db.json file.
 app.post('/api/notes', (request, response) => {
     var newObject = Object.assign({ id: uniqid() }, request.body);
     data.push(newObject);
@@ -50,14 +50,18 @@ app.post('/api/notes', (request, response) => {
     response.status(200).send('The note was successfully added.');
 })
 
+//delete note given the id of the note.
+//this is doen by identifying which id requires to be removed.
+//remove array element
+//re-write db.json file.
 app.delete('/api/notes/:id', (request, response) => {
     const idToDelete = request.params.id;
-    // The filter() method assigns the content that doesn't have the id of the idOfNote to the database variable
-    // The note with the idOfNote is removed
     data = data.filter(info => info.id !== idToDelete);
     fs.writeFileSync(`../../../db/db.json`, JSON.stringify(data))
     response.send('The note was successfully deleted.');
 })
 
+
+//listening to port.
 app.listen(port);
-console.log('Magic happens on port ' + port);
+console.log('I am listening on Port: ' + port);
