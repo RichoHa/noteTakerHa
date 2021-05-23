@@ -4,7 +4,8 @@
 https://github.com/RichoHa/noteTakerHa
 
 ## Deployed Website:
-https://protected-sierra-76198.herokuapp.com/notes
+https://notetakerha.herokuapp.com/notes
+(This has been updated with the most suitable name)
 
 ## List of Technology Used:
 - Node JS
