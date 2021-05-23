@@ -1,22 +1,27 @@
 # noteTakerHa
 
-## Link to Deplyed Application:
-https://richoha.github.io/noteTakerHa/
-
 ## Link to GitHub:
 https://github.com/RichoHa/noteTakerHa
 
 ## List of Technology Used:
-- Express to write server side code.
-- fs to read, write from the db.json file.
-- uniqid to generate a unique id for the notes.
+- Node JS
+- Javascript
+- Express
+- fs
+- uniqid
+
+## Installation:
+- download code from github.
+- npm install in root file.
+
+## How to Run:
+- In your terminal - run server.js to listen on port 8080.
 
 ## Purpose of the website:
 The purpose of the website is to let people write notes.
 
 ## Website
 ![Appplication with three notes](./assets/3-inputs.PNG)
-
 
 ## Web Application ScreenShot
 ![Application in JSON](./assets/4-inputs-with-API-Page.PNG )
